@@ -1,0 +1,40 @@
+* {
+	background-color: lightgreen;
+}
+
+h1 {
+	position: relative;
+	border: 3px;
+	border-style: double;
+	text-align: center;
+	margin: 20px;
+	padding: 5px;
+}
+
+#presentacion, img {
+	padding-left: 60px;
+	padding-top: 20px;
+}
+
+#presentacion {
+	font-size: 1.1em;
+}
+
+.hipervinculos {
+	font-weight: bold; 
+	width: 80%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.base-foto {
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
