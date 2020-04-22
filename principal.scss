@@ -1,0 +1,113 @@
+$verde-oscuro: #088A08;
+$verde-medio: #04B404;
+$verde-claro: #A5DF00;
+$verde-fondo: #BCF5A9;
+
+
+* {
+	background-color: $verde-fondo;
+}
+
+a {
+	color: $verde-medio;
+	font-weight: bold;
+}
+
+a:hover {
+	color: $verde-oscuro;
+}
+
+a:visited {
+	color: $verde-claro;
+}
+
+h1, .base-foto {
+	text-align: center;
+}
+
+%barra-de-titulo {
+	position: relative;
+	border: 3px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 5px;
+}
+
+.titulo-principal {
+  @extend %barra-de-titulo;
+  background-color: $verde-medio;
+}
+
+.titulo-secundario {
+  @extend %barra-de-titulo;
+  background-color: $verde-claro;
+}
+
+img {
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+%ancho-contenido {
+	width: 90%;
+}
+
+.cuerpo {
+	@extend %ancho-contenido;
+}
+
+.boton {
+	@extend %ancho-contenido;
+	margin-left: 50px;
+}
+
+.presentacion {
+	font-size: 1.1em;
+}
+
+.hipervinculos {
+	font-weight: bold; 
+	width: 80%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+@media print { 
+	.hipervinculos, .boton {
+		display: none; 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hipervinculos {
+		font-size: 1.2em;
+	}
+	img {
+		padding-left: 0%;
+		padding-right: 0%;		
+	}
+} 
+
+.base-foto {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.numero {
+	text-align: right;
+}
+
+ol {
+	font-weight: bold;
+	
+	ul {
+		font-weight: lighter;
+	}
+}
+
+#lista-actividades, {
+	width: 300px;
+}

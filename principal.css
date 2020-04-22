@@ -1,40 +1,98 @@
 * {
-	background-color: lightgreen;
-}
-
-h1 {
+	background-color: #BCF5A9;
+  }
+  
+  a {
+	color: #04B404;
+	font-weight: bold;
+  }
+  
+  a:hover {
+	color: #088A08;
+  }
+  
+  a:visited {
+	color: #A5DF00;
+  }
+  
+  h1, .base-foto {
+	text-align: center;
+  }
+  
+  .titulo-secundario, .titulo-principal {
 	position: relative;
 	border: 3px;
-	border-style: double;
-	text-align: center;
+	border-style: solid;
+	border-radius: 10px;
 	margin: 20px;
 	padding: 5px;
-}
+  }
+  
+  .titulo-principal {
+	background-color: #04B404;
+  }
 
-#presentacion, img {
-	padding-left: 60px;
+  .titulo-secundario {
+    background-color: #A5DF00;
+  }
+  
+  img {
+	width: 100%;
 	padding-top: 20px;
-}
-
-#presentacion {
+	padding-left: 5%;
+	padding-right: 5%;
+  }
+  
+  .boton, .cuerpo {
+	width: 90%;
+  }
+  
+  .boton {
+	margin-left: 50px;
+  }
+  
+  .presentacion {
 	font-size: 1.1em;
-}
-
-.hipervinculos {
-	font-weight: bold; 
+  }
+  
+  .hipervinculos {
+	font-weight: bold;
 	width: 80%;
 	margin: auto;
 	padding-top: 30px;
-}
-
-.base-foto {
+  }
+  
+  @media print {
+	.hipervinculos, .boton {
+	  display: none;
+	}
+  }
+  @media screen and (max-width: 600px) {
+	.hipervinculos {
+	  font-size: 1.2em;
+	}
+  
+	img {
+	  padding-left: 0%;
+	  padding-right: 0%;
+	}
+  }
+  .base-foto {
 	font-style: italic;
 	font-size: 0.8em;
-	text-align: center;
-}
-
-img {
-	width: 100%;
-	padding-left: 5%;
-	padding-right: 5%;
-}
+  }
+  
+  .numero {
+	text-align: right;
+  }
+  
+  ol {
+	font-weight: bold;
+  }
+  ol ul {
+	font-weight: lighter;
+  }
+  
+  #lista-actividades {
+	width: 300px;
+  }
